@@ -3,18 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 5555",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "ngrok": "ngrok http --region eu 5555"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.7",
     "@next/font": "13.1.6",
+    "@shopify/app-bridge": "^3.7.2",
+    "@shopify/app-bridge-react": "^3.7.2",
+    "@shopify/polaris": "^10.27.2",
+    "@shopify/shopify-api": "^6.1.0",
     "@types/node": "18.13.0",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
+    "graphql": "^16.6.0",
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
